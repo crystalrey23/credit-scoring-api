@@ -1,7 +1,6 @@
 fastapi
-uvicorn
+httpx
+pytest
 joblib
 numpy
-scikit-learn
 tensorflow
-pytest
