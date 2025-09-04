@@ -12,6 +12,9 @@ model = keras.models.load_model("models/credit_model_final.h5")
 
 THRESHOLD = 0.60
 app = FastAPI(title="Credit Scoring API")
+    @app.get("/health")
+    def health_check():
+       return {"status": "ok"}
 
 
 class Features(BaseModel):
