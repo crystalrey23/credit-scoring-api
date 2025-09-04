@@ -3,6 +3,7 @@ import pandas as pd
 from sklearn.preprocessing import StandardScaler
 import joblib
 
+
 def main():
     # Baca data
     df = pd.read_csv("data/german.data-numeric", sep="\\s+", header=None)
@@ -17,6 +18,7 @@ def main():
     joblib.dump(scaler, "models/credit_scaler.joblib")
     np.savez_compressed("data/german_scaled.npz", X=X_scaled, y=y)
     print("✔️ Preprocessing selesai")
+
 
 if __name__ == "__main__":
     main()

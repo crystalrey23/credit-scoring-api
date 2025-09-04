@@ -53,6 +53,6 @@ if __name__ == "__main__":
                 best_params = (units, lr)
 
     print(
-         f"✔️ Best Val AUC: {best_auc:.4f} "
-         f"with units={best_params[0]}, lr={best_params[1]:.4f}"
+        f"✔️ Best Val AUC: {best_auc:.4f} "
+        f"with units={best_params[0]}, lr={best_params[1]:.4f}"
     )

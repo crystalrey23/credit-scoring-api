@@ -13,12 +13,15 @@ model = keras.models.load_model("models/credit_model_final.h5")
 THRESHOLD = 0.60
 app = FastAPI(title="Credit Scoring API")
 
+
 class Features(BaseModel):
     features: list[float]  # 24 nilai numerik
+
 
 class Prediction(BaseModel):
     probability: float
     label: int
+
 
 @app.post("/predict", response_model=Prediction)
 def predict(data: Features):

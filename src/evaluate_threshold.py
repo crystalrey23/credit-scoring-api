@@ -2,6 +2,7 @@ import numpy as np
 from sklearn.metrics import confusion_matrix
 from tensorflow import keras
 
+
 def evaluate_thresholds(y_true, y_scores, thresholds):
     results = []
     for t in thresholds:
@@ -11,6 +12,7 @@ def evaluate_thresholds(y_true, y_scores, thresholds):
         fnr = fn / (fn + tp)
         results.append((t, fpr, fnr))
     return results
+
 
 if __name__ == "__main__":
     # Muat data terproses
@@ -22,7 +24,7 @@ if __name__ == "__main__":
     idx = np.arange(n)
     np.random.seed(0)
     np.random.shuffle(idx)
-    t, v = int(0.7*n), int(0.85*n)
+    t, v = int(0.7 * n), int(0.85 * n)
     X_test, y_test = X[idx[v:]], y[idx[v:]]
     # Muat model
     model = keras.models.load_model("models/credit_model.keras")
