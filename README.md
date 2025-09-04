@@ -1,3 +1,6 @@
+[![Build Status](https://github.com/crystalrey23/credit-scoring-api/actions/workflows/ci.yml/badge.svg)](https://github.com/crystalrey23/credit-scoring-api/actions) 
+[![Python Version](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/) 
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 # Credit Scoring API
 
 ## Prasyarat
