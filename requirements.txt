@@ -1,11 +1,6 @@
 fastapi
-uvicorn
+httpx
+pytest
 joblib
 numpy
-scikit-learn
 tensorflow
-pytest
-<<<<<<< HEAD
-joblib
-=======
->>>>>>> 4650d593a20bf14f9d7c2a6556f900008cbaac5f
