@@ -20,7 +20,7 @@ httpx==0.28.1
 idna==3.10
 iniconfig==2.1.0
 joblib==1.5.2
-keras==2.9.2
+keras==2.8.0
 libclang==18.1.1
 Markdown==3.8.2
 markdown-it-py==3.0.0
